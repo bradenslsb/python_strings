@@ -70,3 +70,10 @@ print(greeting2.isalpha())
 print(api_data.isnumeric()) #if its a number
 print(greeting.isnumeric())
 
+from functools import reduce
+
+def expontent (num, num_two):
+    li = [num] * num_two
+    return reduce((lambda x, y: x * y), li)
+
+print(expontent(10, 2))
